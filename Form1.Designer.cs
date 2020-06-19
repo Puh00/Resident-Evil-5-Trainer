@@ -35,6 +35,10 @@
             this.hpCheckBox = new System.Windows.Forms.CheckBox();
             this.eggsCheckBox = new System.Windows.Forms.CheckBox();
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+            this.procIdLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.procOpenLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ammoCheckBox
@@ -46,6 +50,7 @@
             this.ammoCheckBox.TabIndex = 0;
             this.ammoCheckBox.Text = "Infinite Ammo";
             this.ammoCheckBox.UseVisualStyleBackColor = true;
+            this.ammoCheckBox.CheckedChanged += new System.EventHandler(this.ammoCheckBox_CheckedChanged);
             // 
             // reserveAmmoCheckBox
             // 
@@ -101,11 +106,52 @@
             // 
             this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
             // 
+            // procIdLabel
+            // 
+            this.procIdLabel.AutoSize = true;
+            this.procIdLabel.Location = new System.Drawing.Point(134, 22);
+            this.procIdLabel.Name = "procIdLabel";
+            this.procIdLabel.Size = new System.Drawing.Size(14, 13);
+            this.procIdLabel.TabIndex = 6;
+            this.procIdLabel.Text = "#";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "re5dx9 Process ID: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Process Open: ";
+            // 
+            // procOpenLabel
+            // 
+            this.procOpenLabel.AutoSize = true;
+            this.procOpenLabel.ForeColor = System.Drawing.Color.Red;
+            this.procOpenLabel.Location = new System.Drawing.Point(111, 45);
+            this.procOpenLabel.Name = "procOpenLabel";
+            this.procOpenLabel.Size = new System.Drawing.Size(50, 13);
+            this.procOpenLabel.TabIndex = 9;
+            this.procOpenLabel.Text = "CLOSED";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.procOpenLabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.procIdLabel);
             this.Controls.Add(this.eggsCheckBox);
             this.Controls.Add(this.hpCheckBox);
             this.Controls.Add(this.grenadesCheckBox);
@@ -129,6 +175,10 @@
         private System.Windows.Forms.CheckBox hpCheckBox;
         private System.Windows.Forms.CheckBox eggsCheckBox;
         private System.ComponentModel.BackgroundWorker backgroundWorker;
+        private System.Windows.Forms.Label procIdLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label procOpenLabel;
     }
 }
 
