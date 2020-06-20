@@ -321,7 +321,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(74, 659);
+            this.label9.Location = new System.Drawing.Point(74, 657);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(200, 47);
             this.label9.TabIndex = 25;
@@ -332,7 +332,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(97, 704);
+            this.label10.Location = new System.Drawing.Point(97, 702);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(134, 47);
             this.label10.TabIndex = 26;
@@ -363,7 +363,7 @@
             this.pictureBox3.Image = global::RE5_Trainer.Properties.Resources.box_small;
             this.pictureBox3.Location = new System.Drawing.Point(233, 296);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(244, 55);
+            this.pictureBox3.Size = new System.Drawing.Size(287, 55);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;

@@ -26,9 +26,10 @@ namespace RE5_Trainer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Starts backgroundworker if not busy
             if (!backgroundWorker.IsBusy)
             {
-                backgroundWorker.RunWorkerAsync();
+                backgroundWorker.RunWorkerAsync(); 
             }
         }
 
@@ -44,16 +45,16 @@ namespace RE5_Trainer
 
             Thread.Sleep(1000);
             backgroundWorker.ReportProgress(0);
-            
         }
+
+        //Locates PID
         private void findProcessID()
         {
             processID = memLib.GetProcIdFromName("re5dx9"); //Gets process ID
+            processOpen = memLib.OpenProcess(processID);
 
             if (processID > 0)
             {
-                processOpen = memLib.OpenProcess(processID);
-
                 procIdLabel.Invoke((MethodInvoker)delegate
                 {
                     procIdLabel.Text = processID.ToString();
@@ -87,8 +88,8 @@ namespace RE5_Trainer
             }
         }
 
-
-        private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e) //Put values that needs to be frozen here
+        //Hex code written constantly to the game's memory region
+        private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e) 
         {
             if (processOpen)
             {
@@ -198,6 +199,7 @@ namespace RE5_Trainer
             backgroundWorker.RunWorkerAsync();
         }
 
+        //Writes a specific amount of money to the memory
         private void saveMoneyButton_Click(object sender, EventArgs e)
         {
             if(moneyTextBox.Text != "")
@@ -206,6 +208,7 @@ namespace RE5_Trainer
             }
         }
 
+        //Writes a specific amount of score (in mercanary game mode) to the memory
         private void scoreButton_Click(object sender, EventArgs e)
         {
             if(scoreTextBox.Text != "")
