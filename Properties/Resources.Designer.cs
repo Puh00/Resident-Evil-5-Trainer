@@ -63,29 +63,9 @@ namespace RE5_Trainer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _398569911007576065 {
-            get {
-                object obj = ResourceManager.GetObject("398569911007576065", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap box_small {
             get {
                 object obj = ResourceManager.GetObject("box_small", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ndesu {
-            get {
-                object obj = ResourceManager.GetObject("ndesu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,16 +86,6 @@ namespace RE5_Trainer.Properties {
         internal static System.Drawing.Bitmap resident_evil_5_wallpaper_1920x1200 {
             get {
                 object obj = ResourceManager.GetObject("resident_evil_5-wallpaper-1920x1200", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap umbrella {
-            get {
-                object obj = ResourceManager.GetObject("umbrella", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
