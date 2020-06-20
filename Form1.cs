@@ -15,9 +15,9 @@ namespace RE5_Trainer
 {
     public partial class Form1 : Form
     {
-        public Mem memLib = new Mem();
-        public int processID;
-        public bool processOpen = false;
+        private Mem memLib = new Mem();
+        private int processID;
+        private bool processOpen = false;
 
         public Form1()
         {
@@ -203,6 +203,15 @@ namespace RE5_Trainer
             if(moneyTextBox.Text != "")
             {
                 memLib.WriteMemory("base+00DA23D8,1c0", "int", moneyTextBox.Text);
+            }
+        }
+
+        private void scoreButton_Click(object sender, EventArgs e)
+        {
+            if(scoreTextBox.Text != "")
+            {
+                memLib.WriteMemory("1EBDD504", "int", scoreTextBox.Text);
+                memLib.WriteMemory("1EBED504", "int", scoreTextBox.Text);
             }
         }
     }

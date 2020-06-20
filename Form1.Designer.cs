@@ -46,6 +46,10 @@
             this.saveMoneyButton = new System.Windows.Forms.Button();
             this.comboTimerCheckBox = new System.Windows.Forms.CheckBox();
             this.countDownCheckBox = new System.Windows.Forms.CheckBox();
+            this.scoreButton = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.scoreTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ammoCheckBox
@@ -208,11 +212,51 @@
             this.countDownCheckBox.Text = "Freeze Countdown Timer";
             this.countDownCheckBox.UseVisualStyleBackColor = true;
             // 
+            // scoreButton
+            // 
+            this.scoreButton.Location = new System.Drawing.Point(481, 134);
+            this.scoreButton.Name = "scoreButton";
+            this.scoreButton.Size = new System.Drawing.Size(75, 23);
+            this.scoreButton.TabIndex = 18;
+            this.scoreButton.Text = "SAVE";
+            this.scoreButton.UseVisualStyleBackColor = true;
+            this.scoreButton.Click += new System.EventHandler(this.scoreButton_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(327, 139);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Score:";
+            // 
+            // scoreTextBox
+            // 
+            this.scoreTextBox.Location = new System.Drawing.Point(375, 136);
+            this.scoreTextBox.Name = "scoreTextBox";
+            this.scoreTextBox.Size = new System.Drawing.Size(100, 20);
+            this.scoreTextBox.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(371, 159);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "999 999 is the max score";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.scoreButton);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.countDownCheckBox);
             this.Controls.Add(this.comboTimerCheckBox);
             this.Controls.Add(this.saveMoneyButton);
@@ -257,6 +301,10 @@
         private System.Windows.Forms.Button saveMoneyButton;
         private System.Windows.Forms.CheckBox comboTimerCheckBox;
         private System.Windows.Forms.CheckBox countDownCheckBox;
+        private System.Windows.Forms.Button scoreButton;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox scoreTextBox;
+        private System.Windows.Forms.Label label5;
     }
 }
 
