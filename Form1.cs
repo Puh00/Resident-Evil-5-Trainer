@@ -141,6 +141,26 @@ namespace RE5_Trainer
                 {
                     memLib.WriteMemory("base+3EB64B", "bytes", "89 71 08");
                 }
+
+                //Infinite Proximity Bombs
+                if (proxyBombCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+3EBC3E", "byte", "EB");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+3EBC3E", "byte", "75");
+                }
+
+                //Freeze Money
+                if (moneyCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+8EDF19", "bytes", "90 90");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+8EDF19", "bytes", "29 D0");
+                }
             }
 
         }
@@ -148,6 +168,14 @@ namespace RE5_Trainer
         private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             backgroundWorker.RunWorkerAsync();
+        }
+
+        private void saveMoneyButton_Click(object sender, EventArgs e)
+        {
+            if(moneyTextBox.Text != "")
+            {
+                memLib.WriteMemory("base+00DA23D8,1c0", "int", moneyTextBox.Text);
+            }
         }
     }
 }

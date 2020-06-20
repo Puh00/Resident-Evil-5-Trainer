@@ -40,6 +40,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.procOpenLabel = new System.Windows.Forms.Label();
+            this.proxyBombCheckBox = new System.Windows.Forms.CheckBox();
+            this.moneyTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.saveMoneyButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ammoCheckBox
@@ -97,9 +101,9 @@
             this.eggsCheckBox.AutoSize = true;
             this.eggsCheckBox.Location = new System.Drawing.Point(77, 186);
             this.eggsCheckBox.Name = "eggsCheckBox";
-            this.eggsCheckBox.Size = new System.Drawing.Size(120, 17);
+            this.eggsCheckBox.Size = new System.Drawing.Size(126, 17);
             this.eggsCheckBox.TabIndex = 5;
-            this.eggsCheckBox.Text = "Infinite Eggs (to eat)";
+            this.eggsCheckBox.Text = "Infinite Eggs ( to eat )";
             this.eggsCheckBox.UseVisualStyleBackColor = true;
             // 
             // backgroundWorker
@@ -146,11 +150,51 @@
             this.procOpenLabel.TabIndex = 9;
             this.procOpenLabel.Text = "CLOSED";
             // 
+            // proxyBombCheckBox
+            // 
+            this.proxyBombCheckBox.AutoSize = true;
+            this.proxyBombCheckBox.Location = new System.Drawing.Point(77, 209);
+            this.proxyBombCheckBox.Name = "proxyBombCheckBox";
+            this.proxyBombCheckBox.Size = new System.Drawing.Size(136, 17);
+            this.proxyBombCheckBox.TabIndex = 10;
+            this.proxyBombCheckBox.Text = "Infinite Proximity Bombs";
+            this.proxyBombCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // moneyTextBox
+            // 
+            this.moneyTextBox.Location = new System.Drawing.Point(77, 248);
+            this.moneyTextBox.Name = "moneyTextBox";
+            this.moneyTextBox.Size = new System.Drawing.Size(100, 20);
+            this.moneyTextBox.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 251);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Money:";
+            // 
+            // saveMoneyButton
+            // 
+            this.saveMoneyButton.Location = new System.Drawing.Point(183, 246);
+            this.saveMoneyButton.Name = "saveMoneyButton";
+            this.saveMoneyButton.Size = new System.Drawing.Size(75, 23);
+            this.saveMoneyButton.TabIndex = 13;
+            this.saveMoneyButton.Text = "SAVE";
+            this.saveMoneyButton.UseVisualStyleBackColor = true;
+            this.saveMoneyButton.Click += new System.EventHandler(this.saveMoneyButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.saveMoneyButton);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.moneyTextBox);
+            this.Controls.Add(this.proxyBombCheckBox);
             this.Controls.Add(this.procOpenLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -183,6 +227,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label procOpenLabel;
+        private System.Windows.Forms.CheckBox proxyBombCheckBox;
+        private System.Windows.Forms.TextBox moneyTextBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button saveMoneyButton;
     }
 }
 
