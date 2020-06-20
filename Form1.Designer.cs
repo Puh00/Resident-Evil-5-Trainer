@@ -89,7 +89,7 @@
             this.hpCheckBox.Name = "hpCheckBox";
             this.hpCheckBox.Size = new System.Drawing.Size(75, 17);
             this.hpCheckBox.TabIndex = 4;
-            this.hpCheckBox.Text = "Infinite HP";
+            this.hpCheckBox.Text = "God mode";
             this.hpCheckBox.UseVisualStyleBackColor = true;
             // 
             // eggsCheckBox
@@ -97,9 +97,9 @@
             this.eggsCheckBox.AutoSize = true;
             this.eggsCheckBox.Location = new System.Drawing.Point(77, 186);
             this.eggsCheckBox.Name = "eggsCheckBox";
-            this.eggsCheckBox.Size = new System.Drawing.Size(84, 17);
+            this.eggsCheckBox.Size = new System.Drawing.Size(120, 17);
             this.eggsCheckBox.TabIndex = 5;
-            this.eggsCheckBox.Text = "Infinite Eggs";
+            this.eggsCheckBox.Text = "Infinite Eggs (to eat)";
             this.eggsCheckBox.UseVisualStyleBackColor = true;
             // 
             // backgroundWorker

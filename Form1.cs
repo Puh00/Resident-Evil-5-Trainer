@@ -121,6 +121,26 @@ namespace RE5_Trainer
                 {
                     memLib.WriteMemory("base+3EC402", "byte", "75");
                 }
+
+                //God mode
+                if (hpCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+77CB40", "bytes", "90 90 90 90 90 90 90");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+77CB40", "bytes", "66 29 8E 64 13 00 00");
+                }
+
+                //Ovo-lacto-vegetarian diet
+                if (eggsCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+3EB64B", "bytes", "90 90 90");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+3EB64B", "bytes", "89 71 08");
+                }
             }
 
         }
