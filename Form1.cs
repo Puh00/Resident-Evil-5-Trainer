@@ -92,6 +92,10 @@ namespace RE5_Trainer
         {
             if (processOpen)
             {
+                //================================================================================
+                // GENERAL
+                //================================================================================
+
                 // Infinite Ammo
                 if (ammoCheckBox.Checked) 
                 {
@@ -160,6 +164,30 @@ namespace RE5_Trainer
                 else
                 {
                     memLib.WriteMemory("base+8EDF19", "bytes", "29 D0");
+                }
+
+                //================================================================================
+                // MERCENARY GAME MODE
+                //================================================================================
+
+                //Freeze Combo Timer
+                if (comboTimerCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+321A31", "bytes", "90 90 90 90 90 90 90 90 90");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+321A31", "bytes", "F3 0F 11 84 31 A0 06 00 00");
+                }
+
+                //Freeze Countdown Timer
+                if (countDownCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+31CCBF", "bytes", "90 90 90 90 90 90 90 90");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+31CCBF", "bytes", "F3 0F 11 87 DC 04 00 00");
                 }
             }
 

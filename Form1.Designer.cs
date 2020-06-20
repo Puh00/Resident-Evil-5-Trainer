@@ -44,6 +44,8 @@
             this.moneyTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.saveMoneyButton = new System.Windows.Forms.Button();
+            this.comboTimerCheckBox = new System.Windows.Forms.CheckBox();
+            this.countDownCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // ammoCheckBox
@@ -186,11 +188,33 @@
             this.saveMoneyButton.UseVisualStyleBackColor = true;
             this.saveMoneyButton.Click += new System.EventHandler(this.saveMoneyButton_Click);
             // 
+            // comboTimerCheckBox
+            // 
+            this.comboTimerCheckBox.AutoSize = true;
+            this.comboTimerCheckBox.Location = new System.Drawing.Point(352, 70);
+            this.comboTimerCheckBox.Name = "comboTimerCheckBox";
+            this.comboTimerCheckBox.Size = new System.Drawing.Size(123, 17);
+            this.comboTimerCheckBox.TabIndex = 14;
+            this.comboTimerCheckBox.Text = "Freeze Combo Timer";
+            this.comboTimerCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // countDownCheckBox
+            // 
+            this.countDownCheckBox.AutoSize = true;
+            this.countDownCheckBox.Location = new System.Drawing.Point(352, 93);
+            this.countDownCheckBox.Name = "countDownCheckBox";
+            this.countDownCheckBox.Size = new System.Drawing.Size(144, 17);
+            this.countDownCheckBox.TabIndex = 15;
+            this.countDownCheckBox.Text = "Freeze Countdown Timer";
+            this.countDownCheckBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.countDownCheckBox);
+            this.Controls.Add(this.comboTimerCheckBox);
             this.Controls.Add(this.saveMoneyButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.moneyTextBox);
@@ -231,6 +255,8 @@
         private System.Windows.Forms.TextBox moneyTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button saveMoneyButton;
+        private System.Windows.Forms.CheckBox comboTimerCheckBox;
+        private System.Windows.Forms.CheckBox countDownCheckBox;
     }
 }
 
