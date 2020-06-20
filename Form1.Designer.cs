@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ammoCheckBox = new System.Windows.Forms.CheckBox();
             this.reserveAmmoCheckBox = new System.Windows.Forms.CheckBox();
             this.moneyCheckBox = new System.Windows.Forms.CheckBox();
@@ -160,6 +161,7 @@
             this.Controls.Add(this.moneyCheckBox);
             this.Controls.Add(this.reserveAmmoCheckBox);
             this.Controls.Add(this.ammoCheckBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Resident Evil 5 Trainer ";
             this.Load += new System.EventHandler(this.Form1_Load);

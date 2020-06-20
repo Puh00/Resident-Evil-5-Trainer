@@ -15,7 +15,6 @@ namespace RE5_Trainer
 {
     public partial class Form1 : Form
     {
-
         public Mem memLib = new Mem();
         public int processID;
         public bool processOpen = false;
@@ -31,7 +30,6 @@ namespace RE5_Trainer
             {
                 backgroundWorker.RunWorkerAsync();
             }
-
         }
 
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
@@ -46,7 +44,6 @@ namespace RE5_Trainer
 
             Thread.Sleep(1000);
             backgroundWorker.ReportProgress(0);
-            
             
         }
         private void findProcessID()
@@ -70,6 +67,24 @@ namespace RE5_Trainer
                     procIdLabel.ForeColor = Color.Red;
                 });
             }
+
+            if (processOpen)
+            {
+                procOpenLabel.Invoke((MethodInvoker)delegate
+                {
+                    procOpenLabel.Text = "OPEN";
+                    procOpenLabel.ForeColor = Color.Green;
+                });
+
+            }
+            else
+            {
+                procOpenLabel.Invoke((MethodInvoker)delegate
+                {
+                    procOpenLabel.Text = "CLOSED";
+                    procOpenLabel.ForeColor = Color.Red;
+                });
+            }
         }
 
 
@@ -77,16 +92,34 @@ namespace RE5_Trainer
         {
             if (processOpen)
             {
-                procOpenLabel.Text = "OPEN";
-                procOpenLabel.ForeColor = Color.Green;
-
-                if (ammoCheckBox.Checked) //Infinite Ammo
+                // Infinite Ammo
+                if (ammoCheckBox.Checked) 
                 {
                     memLib.WriteMemory("base+84B8FB", "bytes", "90 90 90 90");
                 }
                 else
                 {
                     memLib.WriteMemory("base+84B8FB", "bytes", "2B 44 24 08");
+                }
+
+                // Freeze Reserve Ammo
+                if (reserveAmmoCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+84D3DB", "bytes", "90 90 90");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+84D3DB", "bytes", "29 6E 08");
+                }
+
+                //Freeze Grenades
+                if (grenadesCheckBox.Checked)
+                {
+                    memLib.WriteMemory("base+3EC402", "byte", "EB");
+                }
+                else
+                {
+                    memLib.WriteMemory("base+3EC402", "byte", "75");
                 }
             }
 
