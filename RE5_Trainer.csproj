@@ -71,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.manifest" />
     <None Include="packages.config" />
@@ -86,6 +87,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resident_evil_5-wallpaper-1920x1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umbrella.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ndesu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\398569911007576065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qgnO7WyT3B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_small.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

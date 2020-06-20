@@ -72,8 +72,8 @@ namespace RE5_Trainer
             {
                 procOpenLabel.Invoke((MethodInvoker)delegate
                 {
-                    procOpenLabel.Text = "OPEN";
-                    procOpenLabel.ForeColor = Color.Green;
+                    procOpenLabel.Text = "GAME FOUND";
+                    procOpenLabel.ForeColor = Color.Lime;
                 });
 
             }
@@ -81,7 +81,7 @@ namespace RE5_Trainer
             {
                 procOpenLabel.Invoke((MethodInvoker)delegate
                 {
-                    procOpenLabel.Text = "CLOSED";
+                    procOpenLabel.Text = "N/A";
                     procOpenLabel.ForeColor = Color.Red;
                 });
             }
