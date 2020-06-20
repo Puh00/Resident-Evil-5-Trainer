@@ -50,7 +50,6 @@
             this.ammoCheckBox.TabIndex = 0;
             this.ammoCheckBox.Text = "Infinite Ammo";
             this.ammoCheckBox.UseVisualStyleBackColor = true;
-            this.ammoCheckBox.CheckedChanged += new System.EventHandler(this.ammoCheckBox_CheckedChanged);
             // 
             // reserveAmmoCheckBox
             // 
@@ -104,7 +103,10 @@
             // 
             // backgroundWorker
             // 
+            this.backgroundWorker.WorkerReportsProgress = true;
             this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
+            this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
+            this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             // 
             // procIdLabel
             // 
@@ -159,7 +161,7 @@
             this.Controls.Add(this.reserveAmmoCheckBox);
             this.Controls.Add(this.ammoCheckBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Resident Evil 5 Trainer ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
