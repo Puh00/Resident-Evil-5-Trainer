@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,15 @@ namespace RE5_Trainer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            try
+            {
+                Application.Run(new Form1());
+            }
+            catch(TargetInvocationException e)
+            {
+                Application.Exit();
+            }
         }
     }
 }

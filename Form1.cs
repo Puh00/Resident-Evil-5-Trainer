@@ -26,6 +26,7 @@ namespace RE5_Trainer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(31, 24, 24);
             //Starts backgroundworker if not busy
             if (!backgroundWorker.IsBusy)
             {
@@ -58,6 +59,12 @@ namespace RE5_Trainer
                 procIdLabel.Invoke((MethodInvoker)delegate
                 {
                     procIdLabel.Text = processID.ToString();
+                    procIdLabel.ForeColor = Color.Lime;
+                });
+
+                gameProcessNameLabel.Invoke((MethodInvoker)delegate{
+                    gameProcessNameLabel.Text = "re5dx9.exe";
+                    gameProcessNameLabel.ForeColor = Color.Lime;
                 });
             }
             else
@@ -67,10 +74,16 @@ namespace RE5_Trainer
                     procIdLabel.Text = "Process ID Not Found";
                     procIdLabel.ForeColor = Color.Red;
                 });
+
+                gameProcessNameLabel.Invoke((MethodInvoker)delegate {
+                    gameProcessNameLabel.Text = "N/A";
+                    gameProcessNameLabel.ForeColor = Color.Red;
+                });
             }
 
             if (processOpen)
             {
+
                 procOpenLabel.Invoke((MethodInvoker)delegate
                 {
                     procOpenLabel.Text = "GAME FOUND";
@@ -98,15 +111,22 @@ namespace RE5_Trainer
                 //================================================================================
 
                 // Infinite Ammo
-                if (ammoCheckBox.Checked) 
+                try
                 {
-                    memLib.WriteMemory("base+84B8FB", "bytes", "90 90 90 90");
+                    if (ammoCheckBox.Checked) 
+                    {
+                        memLib.WriteMemory("base+84B8FB", "bytes", "90 90 90 90");
+                    }
+                    else
+                    {
+                        memLib.WriteMemory("base+84B8FB", "bytes", "2B 44 24 08");
+                    }
                 }
-                else
+                catch (NullReferenceException eee)
                 {
-                    memLib.WriteMemory("base+84B8FB", "bytes", "2B 44 24 08");
+                    Application.Exit();
                 }
-
+                
                 // Freeze Reserve Ammo
                 if (reserveAmmoCheckBox.Checked)
                 {
@@ -206,6 +226,7 @@ namespace RE5_Trainer
             {
                 memLib.WriteMemory("base+00DA23D8,1c0", "int", moneyTextBox.Text);
             }
+
         }
 
         //Writes a specific amount of score (in mercanary game mode) to the memory
