@@ -237,5 +237,21 @@ namespace RE5_Trainer
                 memLib.WriteMemory("base+E243A8,1042C,6B4", "int", scoreTextBox.Text);
             }
         }
+
+        private void moneyTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                saveMoneyButton_Click(sender, e);
+            }
+        }
+
+        private void scoreTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                scoreButton_Click(sender, e);
+            }
+        }
     }
 }

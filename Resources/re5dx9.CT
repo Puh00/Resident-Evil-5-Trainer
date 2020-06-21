@@ -969,48 +969,20 @@ re5dx9.exe+321A31:
                 <Offset>1C0</Offset>
               </Offsets>
             </CheatEntry>
+            <CheatEntry>
+              <ID>98</ID>
+              <Description>"Score Pointer"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>4 Bytes</VariableType>
+              <Address>re5dx9.exe+E243A8</Address>
+              <Offsets>
+                <Offset>6B4</Offset>
+                <Offset>1042C</Offset>
+              </Offsets>
+            </CheatEntry>
           </CheatEntries>
         </CheatEntry>
       </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>92</ID>
-      <Description>"Score PointerMap 2"</Description>
-      <VariableType>4 Bytes</VariableType>
-      <Address>1EBED504</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>93</ID>
-      <Description>"Score PointerMap 1"</Description>
-      <VariableType>4 Bytes</VariableType>
-      <Address>1EBDD504</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>96</ID>
-      <Description>"No description"</Description>
-      <VariableType>4 Bytes</VariableType>
-      <Address>1EC3D504</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>97</ID>
-      <Description>"old pointer"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <VariableType>4 Bytes</VariableType>
-      <Address>0554043C</Address>
-      <Offsets>
-        <Offset>6b4</Offset>
-      </Offsets>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>98</ID>
-      <Description>"Base Pointer for Score"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <VariableType>4 Bytes</VariableType>
-      <Address>re5dx9.exe+E243A8</Address>
-      <Offsets>
-        <Offset>6B4</Offset>
-        <Offset>1042C</Offset>
-      </Offsets>
     </CheatEntry>
   </CheatEntries>
   <CheatCodes>
@@ -1625,18 +1597,12 @@ re5dx9.exe+321A31:
   </CheatCodes>
   <UserdefinedSymbols/>
   <Comments>Info about this table:
-
 Addresses:
 0554043C
 05530010
 re5dx9.exe+E243A8
-
 Offsets:
 6B4
 1042C
-
-
-
-
 </Comments>
 </CheatTable>

@@ -69,16 +69,16 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.gameProcessNameLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // ammoCheckBox
@@ -226,6 +226,7 @@
             this.moneyTextBox.Name = "moneyTextBox";
             this.moneyTextBox.Size = new System.Drawing.Size(131, 26);
             this.moneyTextBox.TabIndex = 11;
+            this.moneyTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.moneyTextBox_KeyPress);
             // 
             // label3
             // 
@@ -302,6 +303,7 @@
             this.scoreTextBox.Name = "scoreTextBox";
             this.scoreTextBox.Size = new System.Drawing.Size(136, 26);
             this.scoreTextBox.TabIndex = 16;
+            this.scoreTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.scoreTextBox_KeyPress);
             // 
             // label5
             // 
@@ -549,6 +551,17 @@
             this.gameProcessNameLabel.TabIndex = 37;
             this.gameProcessNameLabel.Text = "N/A";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(142, 318);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(159, 31);
+            this.label20.TabIndex = 38;
+            this.label20.Text = "v1.1 Trainer";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RE5_Trainer.Properties.Resources.resident_evil_5_wallpaper_1920x1200;
@@ -558,16 +571,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::RE5_Trainer.Properties.Resources.qgnO7WyT3B;
-            this.pictureBox2.Location = new System.Drawing.Point(257, 442);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(206, 174);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -579,16 +582,15 @@
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;
             // 
-            // label20
+            // pictureBox2
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(142, 318);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(159, 31);
-            this.label20.TabIndex = 38;
-            this.label20.Text = "v1.1 Trainer";
+            this.pictureBox2.Image = global::RE5_Trainer.Properties.Resources.qgnO7WyT3B;
+            this.pictureBox2.Location = new System.Drawing.Point(257, 442);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(206, 174);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -629,8 +631,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
