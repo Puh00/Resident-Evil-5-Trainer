@@ -73,7 +73,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.keypressLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -166,7 +165,7 @@
             this.procIdLabel.AutoSize = true;
             this.procIdLabel.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.procIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.procIdLabel.Location = new System.Drawing.Point(233, 386);
+            this.procIdLabel.Location = new System.Drawing.Point(233, 387);
             this.procIdLabel.Name = "procIdLabel";
             this.procIdLabel.Size = new System.Drawing.Size(15, 15);
             this.procIdLabel.TabIndex = 6;
@@ -225,7 +224,7 @@
             this.moneyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moneyTextBox.Location = new System.Drawing.Point(233, 157);
             this.moneyTextBox.Name = "moneyTextBox";
-            this.moneyTextBox.Size = new System.Drawing.Size(131, 26);
+            this.moneyTextBox.Size = new System.Drawing.Size(139, 26);
             this.moneyTextBox.TabIndex = 11;
             this.moneyTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.moneyTextBox_KeyPress);
             // 
@@ -243,9 +242,9 @@
             // 
             this.saveMoneyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveMoneyButton.ForeColor = System.Drawing.Color.Black;
-            this.saveMoneyButton.Location = new System.Drawing.Point(370, 156);
+            this.saveMoneyButton.Location = new System.Drawing.Point(378, 156);
             this.saveMoneyButton.Name = "saveMoneyButton";
-            this.saveMoneyButton.Size = new System.Drawing.Size(86, 28);
+            this.saveMoneyButton.Size = new System.Drawing.Size(89, 28);
             this.saveMoneyButton.TabIndex = 13;
             this.saveMoneyButton.Text = "SAVE";
             this.saveMoneyButton.UseVisualStyleBackColor = true;
@@ -332,11 +331,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe Print", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(51, 484);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(200, 47);
+            this.label9.Size = new System.Drawing.Size(215, 51);
             this.label9.TabIndex = 25;
             this.label9.Text = "Powered by: ";
             // 
@@ -344,11 +343,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe Print", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(74, 529);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(134, 47);
+            this.label10.Size = new System.Drawing.Size(144, 51);
             this.label10.TabIndex = 26;
             this.label10.Text = "@Puh00";
             // 
@@ -546,7 +545,7 @@
             this.gameProcessNameLabel.AutoSize = true;
             this.gameProcessNameLabel.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.gameProcessNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameProcessNameLabel.Location = new System.Drawing.Point(231, 366);
+            this.gameProcessNameLabel.Location = new System.Drawing.Point(231, 367);
             this.gameProcessNameLabel.Name = "gameProcessNameLabel";
             this.gameProcessNameLabel.Size = new System.Drawing.Size(29, 15);
             this.gameProcessNameLabel.TabIndex = 37;
@@ -593,24 +592,12 @@
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
-            // keypressLabel
-            // 
-            this.keypressLabel.AutoSize = true;
-            this.keypressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.keypressLabel.ForeColor = System.Drawing.Color.White;
-            this.keypressLabel.Location = new System.Drawing.Point(384, 304);
-            this.keypressLabel.Name = "keypressLabel";
-            this.keypressLabel.Size = new System.Drawing.Size(46, 25);
-            this.keypressLabel.TabIndex = 39;
-            this.keypressLabel.Text = "key";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(973, 616);
-            this.Controls.Add(this.keypressLabel);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.gameProcessNameLabel);
             this.Controls.Add(this.label22);
@@ -618,8 +605,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.procOpenLabel);
@@ -631,6 +616,8 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -697,7 +684,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label gameProcessNameLabel;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label keypressLabel;
     }
 }
 

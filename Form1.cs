@@ -52,8 +52,6 @@ namespace RE5_Trainer
         //Listens for key-press-events when app is not in focus with the help of the class "LowLevelKeyboardListener".
         private void _listener_OnKeyPressed(object sender, KeyPressedArgs e)
         {
-            keypressLabel.Text = e.KeyPressed.ToString();
-
             switch (e.KeyPressed.ToString())
             {
                 case "F1": hpCheckBox.Checked = !hpCheckBox.Checked; 
