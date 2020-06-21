@@ -9,13 +9,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DesktopWPFAppLowLevelKeyboardHook;
 using Memory; //Memory.dll 
 
 namespace RE5_Trainer
 {
     public partial class Form1 : Form
     {
+        private LowLevelKeyboardListener _listener;
         private Mem memLib = new Mem();
+
         private int processID;
         private bool processOpen = false;
 
@@ -26,12 +29,60 @@ namespace RE5_Trainer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             this.BackColor = Color.FromArgb(31, 24, 24);
+            
             //Starts backgroundworker if not busy
             if (!backgroundWorker.IsBusy)
             {
                 backgroundWorker.RunWorkerAsync(); 
             }
+
+            //Setup keypress listener (so that the app can detect hotkeys when not in focus)
+            _listener = new LowLevelKeyboardListener();
+            _listener.OnKeyPressed += _listener_OnKeyPressed;
+
+            _listener.UnHookKeyboard();
+            _listener.HookKeyboard();
+
+            //Associates the event handler with the FormClosing Event
+            this.FormClosing += Form1_FormClosing;
+        }
+
+        //Listens for key-press-events when app is not in focus with the help of the class "LowLevelKeyboardListener".
+        private void _listener_OnKeyPressed(object sender, KeyPressedArgs e)
+        {
+            keypressLabel.Text = e.KeyPressed.ToString();
+
+            switch (e.KeyPressed.ToString())
+            {
+                case "F1": hpCheckBox.Checked = !hpCheckBox.Checked; 
+                    break;
+                case "F2": ammoCheckBox.Checked = !ammoCheckBox.Checked;
+                    break;
+                case "F3": grenadesCheckBox.Checked = !grenadesCheckBox.Checked;
+                    break;
+                case "F4": comboTimerCheckBox.Checked = !comboTimerCheckBox.Checked;
+                    break;
+                case "F5": countDownCheckBox.Checked = !countDownCheckBox.Checked;
+                    break;
+                case "F6": reserveAmmoCheckBox.Checked = !reserveAmmoCheckBox.Checked;
+                    break;
+                case "F7": proxyBombCheckBox.Checked = !proxyBombCheckBox.Checked;
+                    break;
+                case "F8": eggsCheckBox.Checked = !eggsCheckBox.Checked;
+                    break;
+                case "F9": moneyCheckBox.Checked = !moneyCheckBox.Checked;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        //Runs before the application is closed
+        private void Form1_FormClosing(Object sender, FormClosingEventArgs e)
+        {
+            _listener.UnHookKeyboard();
         }
 
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)

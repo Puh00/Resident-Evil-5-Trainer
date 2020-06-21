@@ -73,6 +73,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.keypressLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -592,12 +593,24 @@
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
+            // keypressLabel
+            // 
+            this.keypressLabel.AutoSize = true;
+            this.keypressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.keypressLabel.ForeColor = System.Drawing.Color.White;
+            this.keypressLabel.Location = new System.Drawing.Point(384, 304);
+            this.keypressLabel.Name = "keypressLabel";
+            this.keypressLabel.Size = new System.Drawing.Size(46, 25);
+            this.keypressLabel.TabIndex = 39;
+            this.keypressLabel.Text = "key";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(973, 616);
+            this.Controls.Add(this.keypressLabel);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.gameProcessNameLabel);
             this.Controls.Add(this.label22);
@@ -684,6 +697,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label gameProcessNameLabel;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label keypressLabel;
     }
 }
 
