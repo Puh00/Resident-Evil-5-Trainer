@@ -213,8 +213,7 @@ namespace RE5_Trainer
         {
             if(scoreTextBox.Text != "")
             {
-                memLib.WriteMemory("1EBDD504", "int", scoreTextBox.Text);
-                memLib.WriteMemory("1EBED504", "int", scoreTextBox.Text);
+                memLib.WriteMemory("base+E243A8,1042C,6B4", "int", scoreTextBox.Text);
             }
         }
     }
