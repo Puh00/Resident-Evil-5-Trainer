@@ -60,17 +60,17 @@ namespace RE5_Trainer
                     break;
                 case "F3": grenadesCheckBox.Checked = !grenadesCheckBox.Checked;
                     break;
-                case "F4": comboTimerCheckBox.Checked = !comboTimerCheckBox.Checked;
+                case "F4": moneyCheckBox.Checked = !moneyCheckBox.Checked;
                     break;
-                case "F5": countDownCheckBox.Checked = !countDownCheckBox.Checked;
+                case "F5": comboTimerCheckBox.Checked = !comboTimerCheckBox.Checked;
                     break;
-                case "F6": reserveAmmoCheckBox.Checked = !reserveAmmoCheckBox.Checked;
+                case "F6": countDownCheckBox.Checked = !countDownCheckBox.Checked;
                     break;
-                case "F7": proxyBombCheckBox.Checked = !proxyBombCheckBox.Checked;
+                case "F7": reserveAmmoCheckBox.Checked = !reserveAmmoCheckBox.Checked;
                     break;
-                case "F8": eggsCheckBox.Checked = !eggsCheckBox.Checked;
+                case "F8": proxyBombCheckBox.Checked = !proxyBombCheckBox.Checked;
                     break;
-                case "F9": moneyCheckBox.Checked = !moneyCheckBox.Checked;
+                case "F9": eggsCheckBox.Checked = !eggsCheckBox.Checked;
                     break;
                 default:
                     break;
@@ -229,6 +229,7 @@ namespace RE5_Trainer
                 //Freeze Money
                 if (moneyCheckBox.Checked)
                 {
+                    memLib.WriteMemory("base+00DA23D8,1c0", "int", "999999");
                     memLib.WriteMemory("base+8EDF19", "bytes", "90 90");
                 }
                 else
@@ -271,6 +272,7 @@ namespace RE5_Trainer
         //Writes a specific amount of money to the memory
         private void saveMoneyButton_Click(object sender, EventArgs e)
         {
+
             if(moneyTextBox.Text != "")
             {
                 memLib.WriteMemory("base+00DA23D8,1c0", "int", moneyTextBox.Text);

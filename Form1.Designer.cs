@@ -110,11 +110,11 @@
             this.moneyCheckBox.AutoSize = true;
             this.moneyCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moneyCheckBox.ForeColor = System.Drawing.Color.White;
-            this.moneyCheckBox.Location = new System.Drawing.Point(243, 120);
+            this.moneyCheckBox.Location = new System.Drawing.Point(243, 124);
             this.moneyCheckBox.Name = "moneyCheckBox";
             this.moneyCheckBox.Size = new System.Drawing.Size(141, 24);
             this.moneyCheckBox.TabIndex = 2;
-            this.moneyCheckBox.Text = "Freeze Money";
+            this.moneyCheckBox.Text = "Infinite Money";
             this.moneyCheckBox.UseVisualStyleBackColor = true;
             // 
             // grenadesCheckBox
@@ -222,7 +222,7 @@
             // moneyTextBox
             // 
             this.moneyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moneyTextBox.Location = new System.Drawing.Point(233, 157);
+            this.moneyTextBox.Location = new System.Drawing.Point(233, 178);
             this.moneyTextBox.Name = "moneyTextBox";
             this.moneyTextBox.Size = new System.Drawing.Size(139, 26);
             this.moneyTextBox.TabIndex = 11;
@@ -232,7 +232,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(230, 138);
+            this.label3.Location = new System.Drawing.Point(230, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 18);
             this.label3.TabIndex = 12;
@@ -242,7 +242,7 @@
             // 
             this.saveMoneyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveMoneyButton.ForeColor = System.Drawing.Color.Black;
-            this.saveMoneyButton.Location = new System.Drawing.Point(378, 156);
+            this.saveMoneyButton.Location = new System.Drawing.Point(378, 177);
             this.saveMoneyButton.Name = "saveMoneyButton";
             this.saveMoneyButton.Size = new System.Drawing.Size(89, 28);
             this.saveMoneyButton.TabIndex = 13;
@@ -333,7 +333,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe Print", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(51, 484);
+            this.label9.Location = new System.Drawing.Point(51, 477);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(215, 51);
             this.label9.TabIndex = 25;
@@ -345,7 +345,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe Print", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(74, 529);
+            this.label10.Location = new System.Drawing.Point(74, 522);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(144, 51);
             this.label10.TabIndex = 26;
@@ -375,18 +375,20 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.grenadesCheckBox);
             this.groupBox1.Controls.Add(this.moneyTextBox);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.moneyCheckBox);
             this.groupBox1.Controls.Add(this.saveMoneyButton);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(463, 59);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(493, 207);
+            this.groupBox1.Size = new System.Drawing.Size(493, 225);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "General";
@@ -436,7 +438,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(463, 272);
+            this.groupBox2.Location = new System.Drawing.Point(463, 292);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(493, 177);
             this.groupBox2.TabIndex = 32;
@@ -452,7 +454,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(34, 24);
             this.label15.TabIndex = 38;
-            this.label15.Text = "F5";
+            this.label15.Text = "F6";
             // 
             // label14
             // 
@@ -463,23 +465,21 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(34, 24);
             this.label14.TabIndex = 37;
-            this.label14.Text = "F4";
+            this.label14.Text = "F5";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.reserveAmmoCheckBox);
             this.groupBox3.Controls.Add(this.proxyBombCheckBox);
             this.groupBox3.Controls.Add(this.eggsCheckBox);
-            this.groupBox3.Controls.Add(this.moneyCheckBox);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(463, 455);
+            this.groupBox3.Location = new System.Drawing.Point(463, 476);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(493, 155);
+            this.groupBox3.Size = new System.Drawing.Size(493, 125);
             this.groupBox3.TabIndex = 33;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Other";
@@ -489,11 +489,11 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(42, 120);
+            this.label19.Location = new System.Drawing.Point(42, 124);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(34, 24);
             this.label19.TabIndex = 42;
-            this.label19.Text = "F9";
+            this.label19.Text = "F4";
             // 
             // label18
             // 
@@ -504,7 +504,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(34, 24);
             this.label18.TabIndex = 41;
-            this.label18.Text = "F8";
+            this.label18.Text = "F9";
             // 
             // label17
             // 
@@ -515,7 +515,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(34, 24);
             this.label17.TabIndex = 40;
-            this.label17.Text = "F7";
+            this.label17.Text = "F8";
             // 
             // label16
             // 
@@ -526,7 +526,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(34, 24);
             this.label16.TabIndex = 39;
-            this.label16.Text = "F6";
+            this.label16.Text = "F7";
             // 
             // label22
             // 
@@ -585,7 +585,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RE5_Trainer.Properties.Resources.qgnO7WyT3B;
-            this.pictureBox2.Location = new System.Drawing.Point(257, 442);
+            this.pictureBox2.Location = new System.Drawing.Point(257, 437);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(206, 174);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -597,7 +597,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(973, 616);
+            this.ClientSize = new System.Drawing.Size(973, 610);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.gameProcessNameLabel);
             this.Controls.Add(this.label22);
