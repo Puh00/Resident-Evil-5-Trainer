@@ -22,6 +22,9 @@ namespace RE5_Trainer
         private int processID;
         private bool processOpen = false;
 
+        private bool validNumber = false;
+        private int temporaryNumb = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -272,20 +275,30 @@ namespace RE5_Trainer
         //Writes a specific amount of money to the memory
         private void saveMoneyButton_Click(object sender, EventArgs e)
         {
+            validNumber = int.TryParse(moneyTextBox.Text, out temporaryNumb);
 
-            if(moneyTextBox.Text != "")
+            if(validNumber)
             {
                 memLib.WriteMemory("base+00DA23D8,1c0", "int", moneyTextBox.Text);
             }
-
+            else
+            {
+                MessageBox.Show("Invalid input.", "Error message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         //Writes a specific amount of score (in mercanary game mode) to the memory
         private void scoreButton_Click(object sender, EventArgs e)
         {
-            if(scoreTextBox.Text != "")
+            validNumber = int.TryParse(scoreTextBox.Text, out temporaryNumb);
+
+            if(validNumber && temporaryNumb <= 999999)
             {
                 memLib.WriteMemory("base+E243A8,1042C,6B4", "int", scoreTextBox.Text);
+            }
+            else
+            {
+                MessageBox.Show("Invalid input.", "Error message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
