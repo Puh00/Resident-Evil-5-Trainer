@@ -556,11 +556,11 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(142, 318);
+            this.label20.Location = new System.Drawing.Point(136, 318);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(159, 31);
+            this.label20.Size = new System.Drawing.Size(182, 31);
             this.label20.TabIndex = 38;
-            this.label20.Text = "v1.1 Trainer";
+            this.label20.Text = "v1.1.1 Trainer";
             // 
             // pictureBox1
             // 
