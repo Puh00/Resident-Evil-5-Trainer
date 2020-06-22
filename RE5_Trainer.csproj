@@ -99,8 +99,5 @@
   <ItemGroup>
     <None Include="Resources\box_small.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\warning_sign.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
