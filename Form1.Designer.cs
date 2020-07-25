@@ -56,6 +56,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -393,6 +393,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "General";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(42, 124);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(34, 24);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "F4";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -484,17 +495,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Other";
             // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(42, 124);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(34, 24);
-            this.label19.TabIndex = 42;
-            this.label19.Text = "F4";
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -560,7 +560,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(182, 31);
             this.label20.TabIndex = 38;
-            this.label20.Text = "v1.1.1 Trainer";
+            this.label20.Text = "v1.1.2 Trainer";
             // 
             // pictureBox1
             // 
