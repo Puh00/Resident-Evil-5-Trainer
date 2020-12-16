@@ -1,4 +1,10 @@
 # Resident-Evil-5-Trainer
+[![GitHub - License](https://img.shields.io/github/license/Puh00/Resident-Evil-5-Trainer?style=plastic)](LICENSE)
+![Releasae](https://img.shields.io/github/v/release/Puh00/Resident-Evil-5-Trainer?color=green&style=plastic)
+[![Languages](https://img.shields.io/github/languages/top/Puh00/Resident-Evil-5-Trainer?style=plastic)](https://github.com/Puh00/Resident-Evil-5-Trainer/search?l=c%23)
+![Size](https://img.shields.io/github/repo-size/Puh00/Resident-Evil-5-Trainer?style=plastic)
+![Downloads](https://img.shields.io/github/downloads/Puh00/Resident-Evil-5-Trainer/total?color=purple&style=plastic)
+
 A game trainer for Resident Evil 5: Gold Edition which allows players to use cheats such as god mode. A copy of the game, on Steam (PC), is required to use this tool.
 
 ## Screenshots:
